@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
+<script>
+    function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
 
 <body>
     <nav>
@@ -20,6 +26,7 @@
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Reviews</a></li>
         </ul>
+        <button onclick="darkMode()" id="toggle-button">dark/light</button>
     </nav>
 
     <form>
@@ -31,7 +38,7 @@
             <label>
                 <input type="checkbox"> I agree <a href="#">terms and conditions</a>
             </label>
-            <button type="submit">Submit</button>
+            <button type="submit" id="form-button">Submit</button>
         </div>
     </form>
     <footer>

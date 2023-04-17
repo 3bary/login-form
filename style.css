@@ -4,13 +4,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 nav {
     position: fixed;
     left: 0;
     top: 0;
     margin-top: -18px;
     width: 100%;
-
 }
 
 li {
@@ -64,7 +74,12 @@ input[type=text] {
     border-radius: 4px;
 }
 
-button {
+#toggle-button {
+    float: right;
+    margin-top: -42px;
+}
+
+#form-button {
     width: 80px;
     height: 30px;
     margin: 20px 80px;
