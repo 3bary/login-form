@@ -1,0 +1,89 @@
+* {
+    --primary-color: rgb(189, 215, 238);
+    --secondary-color: blue;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: -18px;
+    width: 100%;
+
+}
+
+li {
+    display: inline;
+    transition: 0.4s;
+    padding: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#logo {
+    color: black;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+
+li a:hover {
+    background-color: whitesmoke;
+    margin: 4px;
+}
+
+ul {
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+#container {
+    background-color: var(--primary-color);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 300px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type=text] {
+    padding: 16px 12px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    margin: 20px 80px;
+    display: inline-block;
+    border: solid 2px gray;
+    border-radius: 4px;
+    color: var(--secondary-color);
+}
+
+label {
+    color: var(--secondary-color);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    color: white;
+}
